@@ -71,19 +71,20 @@ For full API documentation, see the code in `views.py`.
 ## Folder Structure {#folder-structure-section}
 
 credit-approval-system/
-├── config/ # Global settings, URLs, Celery config
-├── customers/ # Customer app (models, views, serializers)
-├── loans/ # Loan app (models, views, serializers)
-├── excel_data/ # Excel files for ingestion
-├── staticfiles/ # Django static files
-├── env/ # Virtual environment
-├── .env # Environment variables
-├── Dockerfile # Docker configuration
-├── docker-compose.yml # Docker Compose for app, DB, Redis
-├── requirements.txt # Dependencies
-├── screenshots/ # API screenshots
-├── manage.py # Django entry point
-└── README.md # This file
+├── config/               # Global settings, URLs, Celery config
+├── customers/            # Customer app (models, views, serializers)
+├── loans/                # Loan app (models, views, serializers)
+├── excel_data/           # Excel files for ingestion
+├── staticfiles/          # Django static files
+├── env/                  # Virtual environment
+├── .env                  # Environment variables
+├── Dockerfile            # Docker configuration
+├── docker-compose.yml    # Docker Compose for app, DB, Redis
+├── requirements.txt      # Dependencies
+├── screenshots/          # API screenshots
+├── manage.py             # Django entry point
+└── README.md             # This file
+
 
 1. Customer Registration
 Endpoint: /customers/register/
