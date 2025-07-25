@@ -69,7 +69,7 @@ For full API documentation, see the code in `views.py`.
 - **Edge Cases:** Tested for invalid IDs (404), low credit score rejections (400), no loans (200 with message)
 
 ## credit-approval-system/
-
+```
 ├── config/ # Global settings, URLs, Celery config
 ├── customers/ # Customer app (models, views, serializers)
 ├── loans/ # Loan app (models, views, serializers)
@@ -83,6 +83,7 @@ For full API documentation, see the code in `views.py`.
 ├── screenshots/ # API screenshots
 ├── manage.py # Django entry point
 └── README.md # This file
+```
 
 
 ## 📸 Screenshots
