@@ -14,6 +14,7 @@ This is a Django-based backend system for credit approval, built with Django RES
   - [API Endpoints {#api-endpoints-section}](#api-endpoints-api-endpoints-section)
   - [Testing {#testing-section}](#testing-testing-section)
   - [credit-approval-system/](#credit-approval-system-1)
+  - screenshots(#📸 Screenshots)
   
 ## Features {#features-section}
 
