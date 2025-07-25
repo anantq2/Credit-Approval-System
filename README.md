@@ -85,7 +85,7 @@ For full API documentation, see the code in `views.py`.
 └── README.md             # This file
 
 
-##Screenshot
+## Screenshot
 
 1. Customer Registration
 Endpoint: /customers/register/
