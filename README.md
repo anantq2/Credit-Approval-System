@@ -85,33 +85,49 @@ For full API documentation, see the code in `views.py`.
 └── README.md             # This file
 
 
-## Screenshot
+## 📸 Screenshots
 
-1. Customer Registration
-Endpoint: /customers/register/
-Method: POST
-Description: Registers a new customer, calculates approved_limit (36 * monthly_income, rounded to nearest lakh), and generates customer_id.(screenshots/register-api.png)
+### 1. Customer Registration  
 
-2. Check Loan Eligibility
-Endpoint: /loans/check-eligibility/
-Method: POST
-Description: Calculates credit score, applies approval rules, corrects interest rate, and computes monthly EMI (compound interest).
-(screenshots/check-eligibility.png)
+**Endpoint:** `/customers/register/`  
+**Method:** `POST`  
+**Description:** Registers a new customer, calculates `approved_limit` (36 * monthly_income, rounded to nearest lakh), and generates `customer_id`.  
+![Customer Registration](screenshots/register-api.png)
 
-3. Create Loan
-Endpoint: /loans/create-loan/
-Method: POST
-Description: Checks eligibility, creates loan if approved, updates customer's current_debt, and returns loan_id.
-(screenshots/create-loan.png)
+---
 
-4. View Specific Loan
-Endpoint: /loans/view-loan/<loan_id>/ (replace <loan_id> with actual ID, e.g., /loans/view-loan/L20250725DEF456/)
-Method: GET
-Description: Views details of a single loan, including nested customer info.
-(screenshots/view-loan.png)
+### 2. Check Loan Eligibility  
 
-5. View All Loans for Customer
-Endpoint: /loans/view-loans/<customer_id>/ (replace <customer_id> with actual ID, e.g., /loans/view-loans/C20250725ABC123/)
-Method: GET
-Description: Lists all loans for a customer, with repayments_left (tenure - emis_paid_on_time).
-(screenshots/view-all-loan.png)
+**Endpoint:** `/loans/check-eligibility/`  
+**Method:** `POST`  
+**Description:** Calculates credit score, applies approval rules, corrects interest rate, and computes monthly EMI (compound interest).  
+![Loan Eligibility](screenshots/check-eligibility.png)
+
+---
+
+### 3. Create Loan  
+
+**Endpoint:** `/loans/create-loan/`  
+**Method:** `POST`  
+**Description:** Checks eligibility, creates loan if approved, updates customer's current_debt, and returns `loan_id`.  
+![Create Loan](screenshots/create-loan.png)
+
+---
+
+### 4. View Specific Loan  
+
+**Endpoint:** `/loans/view-loan/<loan_id>/`  
+_Example:_ `/loans/view-loan/L20250725DEF456/`  
+**Method:** `GET`  
+**Description:** Views details of a single loan, including nested customer info.  
+![View Loan](screenshots/view-loan.png)
+
+---
+
+### 5. View All Loans for Customer  
+
+**Endpoint:** `/loans/view-loans/<customer_id>/`  
+_Example:_ `/loans/view-loans/C20250725ABC123/`  
+**Method:** `GET`  
+**Description:** Lists all loans for a customer, with `repayments_left` (tenure - emis_paid_on_time).  
+![All Loans for Customer](screenshots/view-all-loan.png)
