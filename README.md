@@ -68,7 +68,8 @@ For full API documentation, see the code in `views.py`.
 - **Manual Testing:** Use Postman collection (included in repo as `postman_collection.json`) for all endpoints
 - **Edge Cases:** Tested for invalid IDs (404), low credit score rejections (400), no loans (200 with message)
 
-credit-approval-system/
+##credit-approval-system/
+
 ├── config/               # Global settings, URLs, Celery config
 ├── customers/            # Customer app (models, views, serializers)
 ├── loans/                # Loan app (models, views, serializers)
@@ -84,6 +85,7 @@ credit-approval-system/
 └── README.md             # This file
 
 
+##Screenshot
 
 1. Customer Registration
 Endpoint: /customers/register/
