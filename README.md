@@ -9,11 +9,11 @@ This is a Django-based backend system for credit approval, built with Django RES
   - [Features {#features-section}](#features-features-section)
   - [Tech Stack {#tech-stack-section}](#tech-stack-tech-stack-section)
   - [Setup and Installation {#setup-and-installation-section}](#setup-and-installation-setup-and-installation-section)
-  - [Prerequisites](#prerequisites)
-  - [Running the App](#running-the-app)
+    - [Prerequisites](#prerequisites)
+    - [Running the App](#running-the-app)
   - [API Endpoints {#api-endpoints-section}](#api-endpoints-api-endpoints-section)
   - [Testing {#testing-section}](#testing-testing-section)
-  - [Folder Structure {#folder-structure-section}](#folder-structure-folder-structure-section)
+  - [credit-approval-system/](#credit-approval-system-1)
   
 ## Features {#features-section}
 
@@ -68,7 +68,7 @@ For full API documentation, see the code in `views.py`.
 - **Manual Testing:** Use Postman collection (included in repo as `postman_collection.json`) for all endpoints
 - **Edge Cases:** Tested for invalid IDs (404), low credit score rejections (400), no loans (200 with message)
 
-##credit-approval-system/
+## credit-approval-system/
 
 ├── config/               # Global settings, URLs, Celery config
 ├── customers/            # Customer app (models, views, serializers)
