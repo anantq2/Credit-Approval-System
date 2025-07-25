@@ -1,0 +1,7 @@
+# Exclude screenshots if not needed
+screenshots/
+
+# Other temp files
+*.log
+*.tmp
+*.env
