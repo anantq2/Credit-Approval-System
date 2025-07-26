@@ -31,7 +31,7 @@ services:
     ports:
       - "6379:6379"
 
-  celery:                # ✅ Moved here
+  celery:                
     build: .
     command: celery -A config worker --loglevel=info
     volumes:
