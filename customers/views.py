@@ -1,4 +1,4 @@
-# Your existing views (keep them as is)
+
 from rest_framework import generics
 from .models import Customer
 from .serializers import CustomerSerializer
@@ -12,11 +12,11 @@ class CustomerRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView
     serializer_class = CustomerSerializer
     lookup_field = 'id'
 
-# New view for /register (add this below the existing views)
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import CustomerRegistrationSerializer  # Import the new serializer
+from .serializers import CustomerRegistrationSerializer  
 
 class RegisterCustomerView(APIView):
     def post(self, request):
