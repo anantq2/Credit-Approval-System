@@ -13,7 +13,7 @@ class Customer(models.Model):
     phone_number = models.CharField(max_length=15)
     monthly_income = models.IntegerField()
     approved_limit = models.IntegerField()
-    current_debt = models.IntegerField(default=0)  # Add this line if missing
+    current_debt = models.IntegerField(default=0)  
     created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
