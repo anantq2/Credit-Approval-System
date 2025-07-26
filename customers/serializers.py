@@ -24,7 +24,7 @@ class CustomerRegistrationSerializer(serializers.ModelSerializer):
         approved_limit = round(36 * monthly_income / 100000) * 100000
         customer = Customer.objects.create(
             approved_limit=approved_limit,
-            current_debt=0,  # This now works since field is in models.py
+            current_debt=0,  
             **validated_data
         )
         return customer
