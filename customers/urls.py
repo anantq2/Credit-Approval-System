@@ -7,9 +7,9 @@ from .views import (
 
 urlpatterns = [
     
-    path('', CustomerListCreateAPIView.as_view(), name='customer-list-create'),          # Full URL: /api/customers/
-    path('<int:id>/', CustomerRetrieveUpdateDestroyAPIView.as_view(), name='customer-detail'),  # Full URL: /api/customers/<id>/
+    path('', CustomerListCreateAPIView.as_view(), name='customer-list-create'),        
+    path('<int:id>/', CustomerRetrieveUpdateDestroyAPIView.as_view(), name='customer-detail'),  
     
-    # Registration route (keep as is)
-    path('register/', RegisterCustomerView.as_view(), name='register'),                 # Full URL: /api/customers/register/
+    # Registration route 
+    path('register/', RegisterCustomerView.as_view(), name='register'),              
 ]
